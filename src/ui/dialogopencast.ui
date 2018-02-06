@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogOpencast</class>
+ <widget class="QDialog" name="DialogOpencast">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>511</width>
+    <height>521</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OpencastObsPlugin Upload Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>491</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Paths</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>471</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lbl_video">
+       <property name="text">
+        <string>videoPath          </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lbl_videoPath">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>470</y>
+     <width>491</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>close</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="btn_upload">
+      <property name="text">
+       <string>upload</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>491</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Meta Data</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>471</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_7">
+     <item row="3" column="2">
+      <widget class="QLineEdit" name="input_language"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="lbl_rights">
+       <property name="text">
+        <string>Rights</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QLineEdit" name="input_presenters"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="lbl_series">
+       <property name="text">
+        <string>SeriesId</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="input_description"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="lbl_language">
+       <property name="text">
+        <string>Language </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLineEdit" name="input_title"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lbl_description">
+       <property name="text">
+        <string>Description</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLineEdit" name="input_subject"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lbl_title">
+       <property name="text">
+        <string>Title</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QLineEdit" name="input_series"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lbl_subject">
+       <property name="text">
+        <string>Subject</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QLineEdit" name="input_license"/>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLineEdit" name="input_rights"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="lbl_license">
+       <property name="text">
+        <string>License</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QLineEdit" name="input_contributors"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="lbl_presenters">
+       <property name="text">
+        <string>Presenter(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="lbl_contributors">
+       <property name="text">
+        <string>Contributor(s)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lbl_videoPath</tabstop>
+  <tabstop>input_title</tabstop>
+  <tabstop>input_subject</tabstop>
+  <tabstop>input_description</tabstop>
+  <tabstop>input_language</tabstop>
+  <tabstop>input_rights</tabstop>
+  <tabstop>input_license</tabstop>
+  <tabstop>input_series</tabstop>
+  <tabstop>input_presenters</tabstop>
+  <tabstop>input_contributors</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>btn_upload</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DialogOpencast</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>11</x>
+     <y>866</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
