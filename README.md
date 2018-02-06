@@ -1,4 +1,4 @@
-# obsOpencastIngestPlugin
+# OpencastObsPlugin
 --------------------------------
 
 A Plugin for OBS, which allows recorded files to be uploaded directly to Opencast
