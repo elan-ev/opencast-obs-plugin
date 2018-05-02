@@ -1,6 +1,6 @@
-# OpencastObsPlugin
---------------------------------
+Opencast OBS Studio Plugin
+==========================
 
-A Plugin for OBS, which allows recorded files to be uploaded directly to Opencast
-
-see [Documentation](https://elan-ev.github.io/opencast-obs-plugin/) for more Information
+A Plugin for [ONS Studio](https://obsproject.com/), which allows recorded files
+to be uploaded directly to Opencast.  See [Documentation
+](https://elan-ev.github.io/opencast-obs-plugin/) for more information.
