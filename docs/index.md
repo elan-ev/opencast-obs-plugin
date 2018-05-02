@@ -1,9 +1,15 @@
 Opencast OBS Studio Plugin
 ==========================
 
-A Plugin for [ONS Studio](https://obsproject.com/), which allows recorded files
-to be uploaded directly to Opencast.
-Opencast
+A Plugin for [OBS Studio](https://obsproject.com/), which allows recorded files
+to be uploaded directly to [Opencast](http://opencast.org).
+
+OBS Studio is a free and open source software for video recording and live
+streaming. In combination with Opencast and this plugin, lecturers are easily
+able to create screen recordings and upload them to Opencast for processing and
+distribution alongside their regular lecture recordings.
+
+OBS Studio and this plugin are available both for Linux and Windows.
 
 
 Installation
