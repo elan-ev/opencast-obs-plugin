@@ -28,9 +28,30 @@ Ensure that all of the following build dependencies are present on your system:
 Building on Linux
 -----------------
 
-To build the project on Linux run:
+To build the project on Linux(tested in Fedora 32, Ubuntu 18.04 and Archlinux) run:
 
 ```bash
+set -uex
+
+apt update
+apt install -y cmake git libcurl4-gnutls-dev libtinyxml2-dev g++ build-essential libobs-dev qtbase5-dev libconfig++-dev
+
+cd
+git clone https://github.com/elan-ev/lib-opencast-ingest.git
+cd lib-opencast-ingest/
+mkdir build
+cd build/
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake --build .
+
+cd
+git clone https://github.com/elan-ev/opencast-obs-plugin.git
+cd opencast-obs-plugin/libs/libOpencastIngest/include/
+ln -s /root/lib-opencast-ingest/src/libOpencastIngest.h  
+ln -s /root/lib-opencast-ingest/src/libOpencastIngest.hpp 
+cd ../lib
+ln -s /root/lib-opencast-ingest/build/libOpencastIngest_static.a  libOpencastIngest.a
+cd ../../..
 mkdir build
 cd build/
 cmake -DCMAKE_BUILD_TYPE=Release ..
